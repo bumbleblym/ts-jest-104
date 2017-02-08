@@ -1,0 +1,53 @@
+{
+  "scripts": {
+    "test": "shx rm -rf coverage && jest --coverage --no-cache"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts?(x)"
+    ],
+    "globals": {
+      "__TS_CONFIG__": {
+        "jsx": "React"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testPathDirs": [
+      "src"
+    ],
+    "testRegex": "\\.test\\.tsx?$",
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
+    "transform": {
+      "\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
+  },
+  "dependencies": {
+    "@types/enzyme": "2.7.4",
+    "@types/jest": "18.1.1",
+    "@types/node": "7.0.5",
+    "@types/react": "15.0.7",
+    "@types/react-dom": "0.14.23",
+    "@types/react-redux": "4.4.36",
+    "enzyme": "2.7.1",
+    "jest": "18.1.0",
+    "jest-cli": "18.1.0",
+    "react": "15.4.2",
+    "react-addons-test-utils": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-redux": "5.0.2",
+    "redux": "3.6.0",
+    "redux-typescript-actions": "1.3.0",
+    "shx": "0.2.2",
+    "ts-jest": "18.0.3",
+    "typescript": "2.2.0-dev.20170114"
+  },
+  "engines": {
+    "node": "7.5.0",
+    "npm": "4.1.2"
+  },
+  "private": true
+}
