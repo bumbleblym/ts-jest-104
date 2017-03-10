@@ -1,7 +1,0 @@
-{
-	"compileOnSave": false,
-	"compilerOptions": {
-		"outDir": "../src.js",
-		"jsx": "React"
-	}
-}
